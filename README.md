@@ -1,11 +1,11 @@
-# ⚡ NetSentinel — Passive Network Threat Intelligence Engine
+# NetSentinel — Passive Network Threat Intelligence Engine
 
 A sophisticated, zero-dependency-on-root passive network monitor that detects real threats
 using behavioral analysis, heuristics, and MITRE ATT&CK mapping.
 
 ---
 
-## 🔍 What It Detects
+## What It Detects
 
 | Threat                     | MITRE Technique              | Severity |
 |----------------------------|------------------------------|----------|
@@ -21,7 +21,7 @@ using behavioral analysis, heuristics, and MITRE ATT&CK mapping.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -38,7 +38,7 @@ python3 netsentinel.py -d 300 -o my_report.json
 
 ---
 
-## 📋 Output
+## Output
 
 **Live Dashboard** (terminal, refreshes every 2 seconds):
 - Color-coded threat events with MITRE mappings
@@ -64,7 +64,7 @@ python3 netsentinel.py -d 300 -o my_report.json
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```
 netsentinel.py
@@ -92,7 +92,7 @@ netsentinel.py
 
 ---
 
-## 🔒 No Root Required
+## No Root Required
 
 NetSentinel uses **psutil** for connection inspection — no raw packet capture.
 This means it runs without `sudo` on most systems, making it safe and portable.
@@ -101,7 +101,7 @@ For ARP spoofing detection, it calls `arp -a` which is available on all platform
 
 ---
 
-## 🧩 Extending NetSentinel
+## Extending NetSentinel
 
 Add a new detection rule in `ThreatIntelEngine`:
 
@@ -128,7 +128,7 @@ Then add a call to it in `NetSentinel.run()`.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 NetSentinel is for authorized security monitoring only.
 Use only on networks and systems you own or have explicit permission to monitor.
